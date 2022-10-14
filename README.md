@@ -64,7 +64,8 @@ Na ekranu za postavke uvoza repozitorija trebate unijeti poveznicu do repozitori
 
 Pritiskom na gumb _Begin_ _import_ započet će uvoz repozitorija koji će, jednom kada uspješno završi, rezultirati privatnom kopijom početnog repozitorija na Vašem Githubu. S obzirom da je pristup privatnim repozitorijima moguć samo vlasniku i suradnicima, trebate me dodati kao suradnika na repozitorij. Ovo postižete tako da odete na stranicu repozitorija na Vašem Githubu. Ondje na vrhu odaberete opciju _Settings_ prema slici ![Repository settings](./images/repo_settings.png), a zatim opciju _Collaborators_ iz izbornika s lijeve strane, prema slici ![Adding collaborators.](./images/collaborators.png). Trebate dodati korisnika _bruno-ferit_. 
 
- kreirate novi prazan privatan repozitorij na svom Github računu (nemojte dodavati ni .gitignore , ni readme). Kada ste ga kreirali, idete na _import code_ opciju kako biste inicijalizirali kodom uz drugog projekta. Nalijepite link do repozitorija sa zadaćama. Nakon ovog postupka, VS projekt (*solution*) bi trebao postojati i na Vašem Github računu, ali kao privatan projekt. Tada ga je moguće lokalno klonirati (ili eventualno skinuti kao .zip ili .rar datoteku te započeti s radom, ali pokušajte klonirati). Kada želite spremiti stanje projekta, to radite najprije dodavanjem svih promjena naredbom _add_ i zatim kreiranjem trenutne slike naredbom _commit_. Kada želite podići kod na svoj udaljeni repozitorij, to radite naredbom _push_. 
+
+Nakon ovog postupka, projekt bi trebao postojati i na Vašem Github računu, ali kao privatan projekt. Tada ga je moguće lokalno klonirati i započeti s radom. Kada želite spremiti stanje projekta, to radite najprije dodavanjem svih promjena naredbom _add_ i zatim kreiranjem trenutne slike naredbom _commit_. Kada želite podići kod na svoj udaljeni repozitorij, to radite naredbom _push_. 
 
 ```
 git push -u origin --all
@@ -75,11 +76,11 @@ git remote add origin "LINK_KOJI_STE_KOPIRALI"
 ```
 i nakon toga napraviti _push_.
 
-Nakon što unesete lozinku , repozitorij će biti uploadan i na udaljenom repozitoriju bi trebale biti vidljive promjene.
+Predaja zadaće obavlja se postavljanjem poveznice (linka) do Vašeg repozitorija u zadaću otvorenu na Merlin stranici kolegija. Ovo je potrebno ponoviti za svaku zadaću na Merlinu, iako se poveznica do repozitorija naće mijenjati, jer se to smatra prijavom riješene zadaće.
 
 *NAPOMENE:*
 * Projekt koji kreirate na Githubu mora biti privatan. Javni projekti (repozitoriji) neće biti uvaženi. 
-* Link na repozitorij zalijepit ćete na odgovarajuće mjesto na Merlin stranici kolegija.
-* Nakon isteka roka za predaju zadaće repozitorij ćete prebaciti na javan način pristupa kako bi isti mogao biti ocijenjen.
+* Link na repozitorij zalijepit ćete na odgovarajuće mjesto na Merlin stranici kolegija za svaku zadaću koju rješavate.
+* Predaja zadaće nakon isteka roka neće biti moguća.
 * Arhivske datoteke postavljene izravno na Github neće biti razmatrane, nemojte arhivirati kod i postavljati ga tako.
 
