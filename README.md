@@ -4,9 +4,9 @@ Početni projekt za rješavanje domaćih zadaća na kolegiju Objektno orijentira
 
 ## Git
 
-Git je besplatan sustav otvorenog koda namijenjen distribuiranom upravljanju verzijama izvornog koda. Danas je on standard i podrazumijeva se barem osnovno poznavanje rada s gitom (ili, eventualno, drugim sličnim sustavom) u svim razvojnim timovima na projektima svih veličina. 
+Git je besplatan alat otvorenog koda namijenjen distribuiranom upravljanju verzijama izvornog koda. Danas je on standard i podrazumijeva se barem osnovno poznavanje rada s gitom (ili, eventualno, drugim sličnim sustavom) u svim razvojnim timovima na projektima svih veličina. 
 
-Kako biste započeli raditi s gitom, potrebno ga je preuzeti i instalirati. To je moguće napraviti na: [Git preuzimanje](https://www.git-scm.com). Iako ga je moguće koristiti i kroz grafičko sučelje, pune mogućnosti i dublje razumijevanje u svakom se slučaju dobivaju njegovom uporabom kroz konzolu. Na windowsima uz instalaciju gita dolazi mogućnost instalacije _git bash_ alata (_shella_) što je svakako preporučeno. Također, zgodno je dodati git bash u kontekstualni izbornik prilikom instalacije kako bi se on pokretao odmah u željenom direktoriju. Nakon instalacije gita, potrebno je podesiti korisničko ime i e-mail adresu, a to se postiže naredbama
+Kako biste započeli raditi s gitom, potrebno ga je preuzeti i instalirati. To je moguće napraviti na: [Git preuzimanje](https://www.git-scm.com). Iako ga je moguće koristiti i kroz grafičko sučelje, pune mogućnosti i dublje razumijevanje u svakom se slučaju dobivaju njegovom uporabom kroz konzolu. Na windowsima uz instalaciju gita dolazi mogućnost instalacije _git_ _bash_ alata (_shella_) što je svakako preporučeno. Također, zgodno je dodati git bash u kontekstualni izbornik prilikom instalacije kako bi se on pokretao odmah u željenom direktoriju. Nakon instalacije gita, potrebno je podesiti korisničko ime i e-mail adresu, a to se postiže naredbama
 ```
 git config --global user.name "YOUR_USERNAME"
 git config --global user.email "your_email_address@example.com"
@@ -16,7 +16,7 @@ git config --global user.email "your_email_address@example.com"
 
 Git je moguće rabiti odmah nakon instalacije, a jednostavne upute moguće je pronaći (s obzirom da će se kasnije rabiti Github) na [Git basics](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/). Osim ovoga, dobar resurs predstavlja i knjiga [Pro git](https://git-scm.com/book/en/v2). Video vodič kolege Leventića dostupan je na [Git video vodič](https://www.youtube.com/watch?v=a0fgOeEpE74&list=PLDKea8VEeLQNtn__lG_TDqwhlGhoutWym).
 
-Kako biste testirali instalaciju i upoznali se s gitom, kreirajte prazan direktorij naziva "Projekt", u njemu korištenjem 
+Kako biste testirali instalaciju i upoznali se s gitom, kreirajte prazan direktorij naziva "Projekt", navigirajte u netom kreiran direktorij kroz _git_ _bash_(a ako ste dodali _git_ _bash_ u kontekstualni izbornik onda možete desnom tipkom direktno iz direktorija pokrenuti _git_ _bash_) i u njemu korištenjem 
 ```
 git init
 ```
@@ -58,7 +58,13 @@ U ovom trenutku, za probu, pokušajte repozitorij kreiran u prošlom koraku podi
 
 ## Korištenje projekta
 
-Za rješavanje zadaća napravite _import_ ovog repozitorija [(ovaj koji trenutno gledate, kliknite ovdje na link ako ne znate što sad)](https://github.com/zoricbruno/oop_ferit_zadace). Ovo postižete tako što kreirate novi prazan privatan repozitorij na svom Github računu (nemojte dodavati ni .gitignore , ni readme). Kada ste ga kreirali, idete na _import code_ opciju kako biste inicijalizirali kodom uz drugog projekta. Nalijepite link do repozitorija sa zadaćama. Nakon ovog postupka, VS projekt (*solution*) bi trebao postojati i na Vašem Github računu, ali kao privatan projekt. Tada ga je moguće lokalno klonirati (ili eventualno skinuti kao .zip ili .rar datoteku te započeti s radom, ali pokušajte klonirati). Kada želite spremiti stanje projekta, to radite najprije dodavanjem svih promjena naredbom _add_ i zatim kreiranjem trenutne slike naredbom _commit_. Kada želite podići kod na svoj udaljeni repozitorij, to radite naredbom _push_. 
+Za rješavanje zadaća napravite uvoz (_import_) ovog repozitorija [(ovaj koji trenutno gledate, kliknite ovdje na link ako ne znate što sad)](https://github.com/zoricbruno/oop_ferit_zadace). Ovo postižete tako što se prijavite na svoj Github račun i u gornjem desnom kutu kliknete na ikonu +. Tada odabirete import repository, kako je prikazano slikom  ![Import repository](./images/import.png). 
+
+Na ekranu za postavke uvoza repozitorija trebate unijeti poveznicu do repozitorija koji uvozite, naziv za taj repozitorij na Vašem Githubu te postaviti vidljivost na privatnu (!!!), kako je prikazano slikom ![Import settings](./images/import_settings.png).
+
+Pritiskom na gumb _Begin_ _import_ započet će uvoz repozitorija koji će, jednom kada uspješno završi, rezultirati privatnom kopijom početnog repozitorija na Vašem Githubu. S obzirom da je pristup privatnim repozitorijima moguć samo vlasniku i suradnicima, trebate me dodati kao suradnika na repozitorij. Ovo postižete tako da odete na stranicu repozitorija na Vašem Githubu. Ondje na vrhu odaberete opciju _Settings_ prema slici ![Repository settings](./images/repo_settings.png), a zatim opciju _Collaborators_ iz izbornika s lijeve strane, prema slici ![Adding collaborators.](./images/collaborators.png). Trebate dodati korisnika _bruno-ferit_. 
+
+ kreirate novi prazan privatan repozitorij na svom Github računu (nemojte dodavati ni .gitignore , ni readme). Kada ste ga kreirali, idete na _import code_ opciju kako biste inicijalizirali kodom uz drugog projekta. Nalijepite link do repozitorija sa zadaćama. Nakon ovog postupka, VS projekt (*solution*) bi trebao postojati i na Vašem Github računu, ali kao privatan projekt. Tada ga je moguće lokalno klonirati (ili eventualno skinuti kao .zip ili .rar datoteku te započeti s radom, ali pokušajte klonirati). Kada želite spremiti stanje projekta, to radite najprije dodavanjem svih promjena naredbom _add_ i zatim kreiranjem trenutne slike naredbom _commit_. Kada želite podići kod na svoj udaljeni repozitorij, to radite naredbom _push_. 
 
 ```
 git push -u origin --all
