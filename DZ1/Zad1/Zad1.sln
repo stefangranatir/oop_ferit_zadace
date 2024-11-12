@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klase", "Klase\Klase.csproj", "{8397F147-B78F-423A-BC2F-BBA94C3D5A1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konzola", "Konzola\Konzola.csproj", "{36A8B618-8A75-4367-8E8B-0ABD045747A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8397F147-B78F-423A-BC2F-BBA94C3D5A1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8397F147-B78F-423A-BC2F-BBA94C3D5A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8397F147-B78F-423A-BC2F-BBA94C3D5A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8397F147-B78F-423A-BC2F-BBA94C3D5A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A8B618-8A75-4367-8E8B-0ABD045747A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A8B618-8A75-4367-8E8B-0ABD045747A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A8B618-8A75-4367-8E8B-0ABD045747A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A8B618-8A75-4367-8E8B-0ABD045747A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25E56ECB-A25C-4B4B-BBC0-0947F6550193}
+	EndGlobalSection
+EndGlobal

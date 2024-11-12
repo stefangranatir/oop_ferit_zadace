@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Biblioteka;
+using Klase;
 
-namespace ConsoleUI
+namespace Konzola
 {
     internal class Program
     {
-        public static readonly Random rnd = new Random();
+        public static Random random = new Random();
         public static double GenerateRandomScore()
         {
-            double a = rnd.NextDouble();
-            return a * 10;
+            double score = random.NextDouble() * 10;
+            return score;
         }
-        public static void Main(string[] args)
+
+        static void Main(string[] args)
         {
             Episode ep1, ep2;
             ep1 = new Episode();
@@ -24,15 +25,15 @@ namespace ConsoleUI
             for (int i = 0; i < viewers; i++)
             {
                 ep1.AddView(GenerateRandomScore());
-                Console.WriteLine(ep1.GetMaxScore());
+                Console.WriteLine(ep1.Max_score);
             }
-            if (ep1.GetAverageScore() > ep2.GetAverageScore())
+            if (ep1.Total_sum > ep2.Total_sum)
             {
-                Console.WriteLine($"Viewers: {ep1.GetViewerCount()}");
+                Console.WriteLine($"Viewers: {ep1.No_viewers}");
             }
             else
             {
-                Console.WriteLine($"Viewers: {ep2.GetViewerCount()}");
+                Console.WriteLine($"Viewers: {ep2.No_viewers}");
             }
         }
     }
